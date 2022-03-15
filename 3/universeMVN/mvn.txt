@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< local.iks.app:app >--------------------------
+[INFO] Building app 1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ app ---
+[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ app ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Compiling 5 source files to C:\Users\ahgin\Desktop\mvn\projects\universeMVN\target\classes
+[WARNING] /C:/Users/ahgin/Desktop/mvn/projects/universeMVN/src/main/java/classes/model/Model.java: C:\Users\ahgin\Desktop\mvn\projects\universeMVN\src\main\java\classes\model\Model.java uses or overrides a deprecated API.
+[WARNING] /C:/Users/ahgin/Desktop/mvn/projects/universeMVN/src/main/java/classes/model/Model.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.339 s
+[INFO] Finished at: 2022-03-15T00:52:08+03:00
+[INFO] ------------------------------------------------------------------------

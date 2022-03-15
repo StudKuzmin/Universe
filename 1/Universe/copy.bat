@@ -1,0 +1,1 @@
+copy /Y app\appl.war D:\glassfish5\glassfish\domains\domain1\autodeploy\appl.war

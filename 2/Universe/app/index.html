@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html class = "MainMenuBackground">
+	<link rel='stylesheet' href='./view/css/classes.css' type='text/css'/>
+	<link rel='icon' href='./src/icon.png' />
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+		<title>Universe</title>
+	</head>
+
+	<div class = "Planet" id="clickOnPlanet"></div>
+	<div class = "mainMenuScore" id="mainMenuScore">
+		<font color="black" size="32" face="Tahoma" id="setScore">
+			0
+		</font>
+	</div>
+		
+	<script type='module'>
+		import * as manager from "./view/js/controller/manager.js";
+		manager.service.main_menu();
+	</script>
+</html>

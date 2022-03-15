@@ -1,0 +1,116 @@
+body { margin: 0; overflow-x: hidden; }
+
+.Planet {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  background: rgb(43, 124, 206);
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%; 
+  left: 50%;
+  animation-name: shadowPlanetAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-direction: normal;
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+@keyframes shadowPlanetAnimation {
+  from {
+    box-shadow: inset 450px 0px 100px  black,
+    inset -5px 0px 100px 15px rgb(208, 255, 0);
+  }
+  to {
+    box-shadow: inset -450px 0px 100px  black;
+  }
+}
+
+.mainMenuScore { 
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #0ac6ff;
+  background: rgba(65, 62, 62, 0.377);
+  line-height: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Georgia, Serif; 
+}
+
+.button_log { 
+  position: absolute;
+  right: 61px;
+  top: 0;
+  text-decoration: none;
+}
+.button_log:hover { 
+  position: absolute;
+  right: 61px;
+  top: 0;
+  color: #31c5ff;
+  cursor: pointer;
+}
+.button_reg { 
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  text-decoration: none;
+}
+.button_reg:hover { 
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #31c5ff;
+  cursor: pointer;
+}
+
+.top_panel_main_menu {
+  width: auto;
+  height: 100px;
+  background: linear-gradient(to right, rgb(54, 173, 209), rgb(175, 13, 162));
+  border: 3px solid black;
+}
+.top_panel_srch_box {
+  position: absolute;
+  top: 35px;
+  left: 45%;
+  border: 3px solid black;
+}
+.top_panel_img_srch_box {
+  position: absolute;
+  top: 39px;
+  left: 59%;
+}
+
+.centerData {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  border: 3px solid black;
+  background: lightcoral;
+  text-align: center;
+  transform: translate(-50%, -50%); /*Сдвигает по горизонтали и вертикали. Отсчёт от крайней правой и нижней границ*/
+  top: 50%; 
+  left: 50%;
+}
+
+.centerSearchResult {
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  border: 3px solid black;
+  background: linear-gradient(to right, rgb(209, 54, 183), rgb(219, 74, 74));;
+  text-align: center;
+  transform: translate(-50%, -50%); /*Сдвигает по горизонтали и вертикали. Отсчёт от крайней правой и нижней границ*/
+  top: 60%; 
+  left: 50%;
+}
