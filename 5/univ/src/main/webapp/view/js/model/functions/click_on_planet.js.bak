@@ -1,0 +1,14 @@
+import * as manager from "../../controller/manager.js"
+import Globe from "C:\Users\ahgin\node_modules\globe.gl\dist"
+
+export async function click_on_planet(){
+    document.getElementById("clickOnPlanet").onclick = () => {
+        // console.log(manager.score.getScore());
+        document.getElementById("score").innerHTML = manager.score.getScore();
+        manager.score.incScore();
+    }
+    const myGlobe = Globe();
+    myGlobe(myDOMElement)
+      .globeImageUrl(myImageUrl)
+      .pointsData(myData);
+}
