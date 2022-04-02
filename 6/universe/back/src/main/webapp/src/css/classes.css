@@ -1,0 +1,140 @@
+body { margin: 0; overflow-x: hidden; }
+
+.LeftPlanet {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  background: rgb(43, 124, 206);
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%; 
+  left: 20%;
+  box-shadow: 120px 80px 40px 20px yellow;
+
+  animation-name: shadowPlanetAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.Planet {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  background: rgb(43, 124, 206);
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%; 
+  left: 50%;
+  animation-name: shadowPlanetAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes sunAnimation {
+  from {
+    box-shadow: -120px 80px 40px 20px rgb(196, 216, 19);
+  }
+  to {
+    box-shadow: 120px 80px 40px 20px rgb(217, 255, 0);
+  }
+}
+@keyframes shadowPlanetAnimation {
+  from {
+    box-shadow: inset 500px 0px 100px  black;
+  }
+  to {
+    box-shadow: inset -500px 0px 100px  black;
+  }
+}
+
+.Score { 
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #0ac6ff;
+  background: rgba(158, 149, 149, 0.377);
+  line-height: 50px;
+  text-align: center;
+}
+
+/**/
+.MainMenuBackground {
+  background: rgb(29, 29, 29);
+  background-image:
+  -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+  -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+  -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+  -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+
+background-image:
+  -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 40px),
+  -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 30px),
+  -moz-radial-gradient(circle, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+  -moz-radial-gradient(circle, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+
+background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+
+background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+}
+/**/
+
+
+.dataWindow {
+  position: absolute;
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button_log { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_log:hover { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+.button_reg { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_reg:hover { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+
+.centerData {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  text-align: center;
+}
+
+
+/*  */
