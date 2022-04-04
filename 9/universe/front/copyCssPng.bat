@@ -1,0 +1,1 @@
+xcopy ".\src" "C:\Users\ahgin\Desktop\projects\universe\back\src\main\webapp\src" /S /E /Y
