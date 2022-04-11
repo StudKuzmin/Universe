@@ -1,0 +1,5 @@
+import * as manager from "../view/js/controller/manager.js"
+
+const url = "http://localhost:8080";
+manager.globe.showGlobe(document.getElementById('Planet'));
+manager.service.main_menu();
