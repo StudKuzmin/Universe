@@ -1,0 +1,35 @@
+import * as manager from "../../controller/manager.js"
+import Globe from 'globe.gl'
+
+export const globe = (function(){
+    function clickOnePlanet(){
+        document.getElementById('score').innerHTML = manager.score.getScore();
+        manager.score.incScore();
+    }
+    function changePlanet(){
+        // alert("SDFSDF");
+        // document.getElementById('changePlanet').value = 'sdfsdf';
+    }
+    return {
+        setGlobeImageUrl: function(url) {
+            Globe()(url)
+                .globeImageUrl("./src/planets_textures/planet2.png")
+                .showAtmosphere(true) // Свечение вокруг
+                .atmosphereColor("red")
+                .backgroundImageUrl("./src/planets_textures/sky.png")
+                .onGlobeReady(changePlanet);
+        },
+        showGlobe: function(url){
+            Globe()(url)
+                .globeImageUrl("./src/planets_textures/planet2.png")
+                .showAtmosphere(true) // Свечение вокруг
+                .atmosphereColor("yellow")
+                .backgroundImageUrl("./src/planets_textures/sky.png")
+                .onGlobeReady(changePlanet);
+        },
+        globeClick: function(url) { 
+            Globe()(url)
+                .onGlobeClick(clickOnePlanet);
+        }
+    }
+})()
