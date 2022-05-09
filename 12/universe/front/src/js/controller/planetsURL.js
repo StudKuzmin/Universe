@@ -1,0 +1,1 @@
+export const planet1 = "./front/public/src/planets_textures/planet1.png";
