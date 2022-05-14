@@ -8,6 +8,7 @@ import java.net.*;
 import java.sql.*;
 
 import controller.Users;
+import model.interfaces.IModel;
 
 //////
 import com.auth0.jwt.JWTVerifier;
@@ -15,7 +16,7 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
-public class Model
+public class Model implements IModel
 {    
 	Statement stmt;               						
 	ResultSet rs;	

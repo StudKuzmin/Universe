@@ -11,6 +11,7 @@ import jakarta.inject.Inject;
 
 import model.Model;
 import controller.Users;
+import model.interfaces.IModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,27 +27,27 @@ import java.io.IOException;
 
 import com.google.gson.*;
 
-@Provider
-class CORSFilter implements ContainerResponseFilter {
-
-	@Override
-	public void filter(ContainerRequestContext request, ContainerResponseContext response) throws IOException {
-		response.getHeaders()
-				.add("Access-Control-Allow-Origin", "http://localhost:9090");
-		response.getHeaders()
-				.add("Access-Control-Allow-Headers", "CSRF-Token, X-Requested-By, Authorization, Content-Type");
-		response.getHeaders()
-				.add("Access-Control-Allow-Credentials", "true");
-		response.getHeaders()
-				.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-	}
-}
+//@Provider
+//class CORSFilter implements ContainerResponseFilter {
+//
+//	@Override
+//	public void filter(ContainerRequestContext request, ContainerResponseContext response) throws IOException {
+//		response.getHeaders()
+//				.add("Access-Control-Allow-Origin", "http://localhost:9090");
+//		response.getHeaders()
+//				.add("Access-Control-Allow-Headers", "CSRF-Token, X-Requested-By, Authorization, Content-Type");
+//		response.getHeaders()
+//				.add("Access-Control-Allow-Credentials", "true");
+//		response.getHeaders()
+//				.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
+//	}
+//}
 
 @Path("/")
 public class Service {
 	
-	// @Inject
-	// IModel model;
+//	@Inject
+//	Model model;
 
 	@POST
 	@Path("/regData")
@@ -76,7 +77,16 @@ public class Service {
 		}
 		catch (Exception e) { return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build(); } 
 
-		return Response.ok(false).build(); 
+		return Response
+				.status(200)
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Credentials", "true")
+				.header("Access-Control-Allow-Headers",
+						"origin, content-type, accept, authorization")
+				.header("Access-Control-Allow-Methods",
+						"GET, POST, PUT, DELETE, OPTIONS, HEAD")
+				.entity("")
+				.build();
 	}
 
 
