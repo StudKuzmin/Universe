@@ -1,0 +1,10 @@
+classes\model\service\logDataService\interfaceLogDataService\ILogDataService.class
+classes\model\Model.class
+classes\model\service\logDataService\LogDataService.class
+classes\model\service\regDataService\interfaceRegDataService\IRegDataService.class
+classes\controller\Service.class
+classes\model\service\regDataService\RegDataService.class
+classes\controller\Users.class
+classes\controller\Config.class
+classes\controller\CORSFilter.class
+classes\model\interfaceModel\IModel.class

@@ -1,0 +1,43 @@
+import '../../../classes.css'
+
+// export const login_PAGE = 
+                // "<html>"+
+                    // "<div id = 'Planet_login_PAGE'></div>"+
+                        // "<div class='dataWindow'>"+
+                            // "<h1>LOGIN</h1>"+
+                            // "LOGIN <br>"+
+                            // "<input type='text' id='log_data'> <br>"+ 
+                            // "PASSWORD <br>"+
+                            // "<input type='text' id='pas_data'> <br> <br> <br>"+    
+                            // "<input type='button' value='ВОЙТИ' id='to_login' style='height:50px; width:100px'>"+ 
+                        // "</div>"+
+                // "</html>";
+
+
+// export function login_PAGE() {
+	// return <div>
+        // <div id='Planet_login_PAGE'></div>
+        // <div class='dataWindow'>
+            // <h1>LOGIN</h1>
+            // "LOGIN"
+            // <input type='text' id='log_data'/>
+            // "PASSWORD" 
+            // <input type='text' id='pas_data'/>
+            // <input type='button' value='ВОЙТИ' id='to_login' style='height:50px; width:100px'/>
+        // </div>
+    // </div>
+// }
+export const login_PAGE = () => (
+    <div>
+        <div id='Planet_login_PAGE'></div>
+        <div className='dataWindow'>
+            <h1>LOGIN</h1>
+            "LOGIN" <br></br>
+            <input type='text' id='log_data'/> <br></br>
+            "PASSWORD" <br></br>
+            <input type='text' id='pas_data'/> <br></br><br></br>
+            <input type='button' value='ВОЙТИ' id='to_login'/>
+        </div>
+    </div>
+);
+// ReactDOM.createRoot(document.getElementById("Planet_index_PAGE")).render(<login_PAGE/>);
