@@ -1,0 +1,130 @@
+body { margin: 0; overflow-x: hidden; }
+
+/* .LeftPlanet { */
+  /* position: absolute; */
+  /* width:400px; */
+  /* height: 400px; */
+  /* background: rgb(43, 124, 206); */
+  /* border-radius: 50%; */
+  /* transform: translate(-50%, -50%);  */
+  /* top: 50%;  */
+  /* left: 20%; */
+  /* box-shadow: 120px 80px 40px 20px yellow; */
+
+  /* animation-name: shadowPlanetAnimation; */
+  /* animation-duration: 15s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: linear;  */
+/* } */
+#to_login 
+{
+	'height:50px; width:100px;'
+}
+.Planet {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  background: rgb(43, 124, 206);
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%; 
+  left: 50%;
+  animation-name: shadowPlanetAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes sunAnimation {
+  from {
+    box-shadow: -120px 80px 40px 20px rgb(196, 216, 19);
+  }
+  to {
+    box-shadow: 120px 80px 40px 20px rgb(217, 255, 0);
+  }
+}
+@keyframes shadowPlanetAnimation {
+  from {
+    box-shadow: inset 500px 0px 100px  black;
+  }
+  to {
+    box-shadow: inset -500px 0px 100px  black;
+  }
+}
+
+.Score { 
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #0ac6ff;
+  background: rgba(158, 149, 149, 0.377);
+  line-height: 50px;
+  text-align: center;
+}
+
+
+.dataWindow {
+  position: absolute;
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  left: 68%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  opacity: 0.7;
+}
+
+.button_log { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_log:hover { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+.button_reg { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_reg:hover { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+
+.centerData {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  text-align: center;
+}
+
+
+/*  */
+
+.beautifullButton {
+  position: absolute;
+  left: 85%;
+  top: 50%;
+}
