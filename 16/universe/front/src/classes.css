@@ -1,0 +1,260 @@
+body { margin: 0; overflow-x: hidden; }
+
+/* .LeftPlanet { */
+  /* position: absolute; */
+  /* width:400px; */
+  /* height: 400px; */
+  /* background: rgb(43, 124, 206); */
+  /* border-radius: 50%; */
+  /* transform: translate(-50%, -50%);  */
+  /* top: 50%;  */
+  /* left: 20%; */
+  /* box-shadow: 120px 80px 40px 20px yellow; */
+
+  /* animation-name: shadowPlanetAnimation; */
+  /* animation-duration: 15s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: linear;  */
+/* } */
+#to_login 
+{
+	height:50px; 
+	width:100px;
+}
+#to_register
+{
+  height:50px; 
+  width:115px
+}
+
+.myCanvas{
+  position: absolute;
+  border: 3px black;
+  background: rgb(43, 124, 206);
+  left: 50%;
+  top: 50%;
+}
+
+.loadAnimation
+{
+  position: absolute;
+  left: 59%;
+  top: 50%;
+  height:700px; 
+	width:700px;
+}
+.Planet {
+  position: absolute;
+  width:400px;
+  height: 400px;
+  background: rgb(43, 124, 206);
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%; 
+  left: 50%;
+  animation-name: shadowPlanetAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+.Score { 
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #0ac6ff;
+  background: rgba(158, 149, 149, 0.377);
+  line-height: 50px;
+
+  text-align: center;
+  font-family: 'Times New Roman';
+	font-size: 24px;
+  font-weight: bold;
+}
+.Stats { 
+  position: absolute;
+  left: 70%;
+  top: 90%;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #0ac6ff;
+  background: rgba(158, 149, 149, 0.377);
+  /* line-height: 25px; */
+
+  text-align: center;
+  font-family: 'Times New Roman';
+	font-size: 10px;
+  font-weight: bold;
+}
+.AddRed { 
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  width: 300px;
+  height: 100px;
+  border: 6px solid #82298a;
+  background: rgba(67, 47, 182, 0.377);
+  line-height: 100px;
+
+  text-align: center;
+  font-family: 'Times New Roman';
+	font-size: 24px;
+  font-weight: bold;
+  color: red;
+
+  cursor: pointer;
+  user-select: none;
+}
+.AddWhite { 
+  position: absolute;
+  left: 2%;
+  top: 40%;
+  width: 300px;
+  height: 100px;
+  border: 6px solid #82298a;
+  background: rgba(67, 47, 182, 0.377);
+  line-height: 100px;
+
+  text-align: center;
+  font-family: 'Times New Roman';
+	font-size: 24px;
+  font-weight: bold;
+  color: red;
+
+  cursor: pointer;
+  user-select: none;
+}
+.AddBlack { 
+  position: absolute;
+  left: 2%;
+  top: 60%;
+  width: 300px;
+  height: 100px;
+  border: 6px solid #82298a;
+  background: rgba(67, 47, 182, 0.377);
+  line-height: 100px;
+
+  text-align: center;
+  font-family: 'Times New Roman';
+	font-size: 24px;
+  font-weight: bold;
+  color: red;
+
+  cursor: pointer;
+  user-select: none;
+}
+.showPlanetInfo{
+  position: absolute;
+
+  left: 70%;
+  top: 30%;
+  background: rgba(158, 149, 149, 0.377);
+
+  animation-duration: 1.0s;  /* Время работы анимации */
+  animation-fill-mode: both;  /* Поведение анимации */
+  animation-name: showPlanetInfoAnimation; /* Имя анимации */
+}
+@keyframes showPlanetInfoAnimation { /* Сама анимация */
+  from {                /* Старт анимации */
+      width: 0px;
+      height: 0px;
+      border: 0px solid #3524c9;
+  }
+  to {              /* в финале анимации - финал это заданная 0.55s */
+      width: 300px;
+      height: 300px;
+      border: 5px solid #3524c9;
+  }
+}
+
+.hidePlanetInfo{
+  position: absolute;
+
+  left: 70%;
+  top: 30%;
+  background: rgba(158, 149, 149, 0.377);
+
+  animation-duration: 1.0s;  /* Время работы анимации */
+  animation-fill-mode: both;  /* Поведение анимации */
+  animation-name: hidePlanetInfoAnimation; /* Имя анимации */
+}
+@keyframes hidePlanetInfoAnimation { /* Сама анимация */
+  from {                /* Старт анимации */
+      width: 300px;
+      height: 300px;
+      border: 5px solid #3524c9;
+  }
+  to {              /* в финале анимации - финал это заданная 0.55s */
+      width: 0px;
+      height: 0px;
+      border: 0px solid #3524c9;
+  }
+}
+
+
+.dataWindow {
+  position: absolute;
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  left: 68%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+  opacity: 0.7;
+}
+
+.button_log { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_log:hover { 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+.button_reg { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.button_reg:hover { 
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #31c5ff;
+  cursor: pointer;
+}
+
+.centerData {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, rgb(0, 191, 255), rgb(255, 0, 234));
+  border: solid whitesmoke;
+  height: 525px;
+  width: 425px;
+  text-align: center;
+}
+
+
+/*  */
+
+.beautifullButton {
+  position: absolute;
+  left: 85%;
+  top: 50%;
+}
